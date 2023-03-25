@@ -1,0 +1,26 @@
+.footer{
+    margin: 0px;
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    background-color: black;
+}
+.footerb{
+  
+    height: 180px;
+    width: 300px;
+    border: 2px solid none;
+    float: left;
+    color: cornsilk;
+    text-align: center;
+    
+    
+  
+}
+.footer a{
+    text-decoration: none;
+    color: cornsilk;
+}

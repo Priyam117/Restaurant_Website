@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.6.0.min.js"></script>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menu-header">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="menu-content">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="dropbtn">services <i class="fa fa-chevron-down"></i></a>
+        <ul class="dropdown">
+            <li><a href="#">service 1</a></li>
+            <li><a href="#">service 2</a></li>
+            <li><a href="#">servic 3</a></li>
+            <li><a href="#">service 4</a></li>
+            <li><a href="#">service 5 </a></li>
+        </ul></li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">carrer</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">login</a></li>
+    </ul>
+</div>
+    <script>
+     $('.dropbtn') .click(function()
+     {
+         $('.dropdown') .toggleClass('display');
+     })
+     $ (' .fa-bars') .click(function()
+     {
+         $(' .menu-content') .toggle();
+     })
+    </script>
+    
+</body>
+
+</html>

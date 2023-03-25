@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./slider.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.6.0.min.js"></script>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menu-header">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="menu-content">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="dropbtn">menu <i class="fa fa-chevron-down"></i></a>
+        <ul class="dropdown">
+            <li><a href="#">Veg Thali </a></li>
+            <li><a href="#">Nonveg Thali</a></li>
+            <li><a href="#">Fast Food</a></li>
+            <li><a href="#">Pasta</a></li>
+            <li><a href="#">Chaat </a></li>
+            <li><a href="#">Soup </a></li>
+        </ul></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Contact</a></li>
+  
+    </ul>
+    <div id="outerbox">
+        <div id="sliderbox">
+          <img src="fast6.jpg">
+          <img src="fast3.jpg">
+          <img src="fast4.jpg">
+          <img src="fast5.jpg">
+  
+        </div>
+      </div>
+</div>
+    <script>
+     $('.dropbtn') .click(function()
+     {
+         $('.dropdown') .toggleClass('display');
+     })
+     $ (' .fa-bars') .click(function()
+     {
+         $(' .menu-content') .toggle();
+     })
+    </script>
+    
+</body>
+
+</html>
